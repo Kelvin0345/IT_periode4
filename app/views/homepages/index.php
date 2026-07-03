@@ -1,0 +1,74 @@
+<?php require_once APPROOT . '/views/includes/header.php'; ?>
+
+<!-- Voor het centreren van de container gebruiken we het boorstrap grid -->
+<div class="container">
+    <div class="row mt-4 d-flex justify-content-center">
+        <div class="col-10">
+            <h2><?php echo $data['title']; ?></h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row mt-3 d-flex justify-content-center">
+        <div class="col-10">
+            <p class="lead">Welkom bij MVC Basics. Selecteer een categorie in de navbar om de CRUD functionaliteit te
+                bekijken.</p>
+        </div>
+    </div>
+
+    <div class="row mt-4 d-flex justify-content-center homepage-links">
+        <div class="col-10">
+            <div class="row">
+                <div class="col-6 mb-4 d-flex">
+                    <div class="card h-100 w-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><i class="bi bi-phone"></i> Smartphones</h5>
+                            <p class="card-text">Beheer een overzicht van smartphones met merk, model, prijs en
+                                specificaties.</p>
+                            <a href="<?= URLROOT; ?>/SmartphoneController/index" class="btn btn-primary mt-auto">Bekijk
+                                Smartphones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 mb-4 d-flex">
+                    <div class="card h-100 w-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><i class="bi bi-shoe"></i> Sneakers</h5>
+                            <p class="card-text">Beheer een overzicht van sneakers met merk, model en type.</p>
+                            <a href="<?= URLROOT; ?>/SneakersController/index" class="btn btn-primary mt-auto">Bekijk
+                                Sneakers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 mb-4 d-flex">
+                    <div class="card h-100 w-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><i class="bi bi-clock"></i> Horloges</h5>
+                            <p class="card-text">Beheer een overzicht van luxe horloges met merk, model, prijs en
+                                materiaal.</p>
+                            <a href="<?= URLROOT; ?>/HorlogesController/index" class="btn btn-primary mt-auto">Bekijk
+                                Horloges</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 mb-4 d-flex">
+                    <div class="card h-100 w-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><i class="bi bi-music-note-beamed"></i> Zangeressen</h5>
+                            <p class="card-text">Beheer een overzicht van de rijkste en de lekkerste zangeressen ter wereld.</p>
+                            <a href="<?= URLROOT; ?>/ZangeressenController/index" class="btn btn-primary mt-auto">Bekijk
+                                Zangeressen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php require_once APPROOT . '/views/includes/footer.php'; ?>
